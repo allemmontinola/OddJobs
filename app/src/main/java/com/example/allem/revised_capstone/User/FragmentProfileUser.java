@@ -31,6 +31,7 @@ public class FragmentProfileUser extends Fragment {
 
     @SuppressLint("SetTextI18n")
     private void MyViews(View view) {
+        //dapat naa nani nga changes
         tvFullName = view.findViewById(R.id.profile_user_fullName);
         tvEmail = view.findViewById(R.id.profile_user_email);
         tvContact = view.findViewById(R.id.profile_user_contactNo);
