@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item android:title="Request">
+            <menu>
+                <item
+                    android:id="@+id/homeUser"
+                    android:icon="@drawable/ic_home"
+                    android:title="Home"></item>
+                <item
+                    android:id="@+id/profileUser"
+                    android:icon="@drawable/ic_profile"
+                    android:title="Profile"></item>
+                <item
+                    android:id="@+id/appointUser"
+                    android:icon="@drawable/ic_request"
+                    android:title="Appointment Request"></item>
+                <item
+                    android:id="@+id/appointListUser"
+                    android:icon="@drawable/ic_lists"
+                    android:title="Appointment List"></item>
+                <item
+                    android:id="@+id/logoutUser"
+                    android:icon="@drawable/ic_logout"
+                    android:title="Logout"></item>
+
+            </menu>
+        </item>
+    </group>
+
+
+
+</menu>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawHorizontalTrack="true"
+    tools:context=".Login">
+
+    <ImageView
+        android:layout_width="164dp"
+        android:layout_height="165dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/oddjobs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="190dp"
+        android:gravity="center"
+        android:text="Odd Jobs"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/white"
+        android:textSize="24dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLogin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="3dp"
+        android:layout_below="@+id/oddjobs"
+        android:layout_marginTop="4dp"
+        android:textColorHint="@android:color/white">
+
+        <EditText
+            android:id="@+id/log_username"
+            android:layout_width="233dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableEnd="@drawable/ic_white_profile"
+            android:hint="Username"
+            android:inputType="text"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLogin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInputLogin1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="12dp"
+        android:padding="3dp"
+        android:textColorHint="@android:color/white"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@android:color/white">
+
+        <EditText
+            android:id="@+id/log_password"
+            android:layout_width="233dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+    </android.support.design.widget.TextInputLayout>
+
+    <RadioButton
+        android:id="@+id/log_radioUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInputLogin2"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="3dp"
+        android:text="as User"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <RadioButton
+        android:id="@+id/log_radioService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/log_radioUser"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="3dp"
+        android:text="as Service Provider"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <ru.dimorinny.floatingtextbutton.FloatingTextButton
+        android:id="@+id/log_btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/log_radioUser"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="45dp"
+        android:background="@android:color/transparent"
+        android:textSize="16sp"
+        app:floating_background_color="@drawable/button_layout"
+        app:floating_right_icon="@drawable/ic_white_login"
+        app:floating_title="Login        "
+        app:floating_title_color="@android:color/white" />
+
+    <ru.dimorinny.floatingtextbutton.FloatingTextButton
+        android:id="@+id/log_btnReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/log_btnLogin"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="3dp"
+        android:background="@android:color/transparent"
+        android:textSize="16sp"
+        app:floating_background_color="@drawable/button_layout"
+        app:floating_right_icon="@drawable/ic_white_login"
+        app:floating_title="Register here        "
+        app:floating_title_color="@android:color/white" />
+
+
+</RelativeLayout>

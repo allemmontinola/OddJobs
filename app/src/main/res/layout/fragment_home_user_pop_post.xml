@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:longClickable="true"
+        android:orientation="vertical"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="4dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:contentPadding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="Post Job"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="24sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <EditText
+                android:id="@+id/home_user_pop_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Write Subject"
+                android:inputType="text"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/home_user_pop_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_user_pop_title"
+                android:hint="Write Description"
+                android:inputType="text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvTag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_user_pop_desc"
+                android:drawableStart="@drawable/ic_style"
+                android:gravity="start|center"
+                android:text="Tags"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/home_user_pop_tagOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_user_tag_list"
+                android:enabled="true"
+                android:hint=" Tag One"
+                android:inputType="text"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/home_user_pop_tagTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_user_pop_tagOne"
+                android:enabled="true"
+                android:hint=" Tag Two"
+                android:inputType="text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvReward"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_user_pop_tagTwo"
+                android:drawableStart="@drawable/ic_price_range"
+                android:gravity="start|center"
+                android:text="Reward Range"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/home_user_pop_reward_range1"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvReward"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:hint="₱ Range 1"
+                android:gravity="fill"/>
+
+            <TextView
+                android:id="@+id/rewardRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="16sp"
+                android:layout_toEndOf="@+id/home_user_pop_reward_range1"
+                android:layout_below="@+id/tvReward"
+                android:layout_marginTop="12dp"/>
+
+
+            <EditText
+                android:id="@+id/home_user_pop_reward_range2"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvReward"
+                android:layout_toEndOf="@+id/home_user_pop_reward_range1"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:hint="₱ Range 2"
+                android:layout_marginStart="6dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/home_user_tag_list"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/tvTag" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/home_user_pop_postBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/home_user_pop_tagTwo"
+                android:layout_marginTop="12dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_write"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

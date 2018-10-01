@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_appoint_lists_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="top"
+        android:longClickable="true"
+        android:orientation="vertical"
+        card_view:cardUseCompatPadding="true"
+        card_view:contentPadding="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fullName_service_appoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_toEndOf="@+id/iv_profile_service_appoint"
+                android:drawableStart="@drawable/ic_profile"
+                android:gravity="fill"
+                android:padding="8dp"
+                android:text=" Owner"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/id_service_appoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Hek hek"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="16sp"
+                android:visibility="invisible" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profile_service_appoint"
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/ic_launcher_round" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fullName_service_appoint"
+                android:layout_toEndOf="@+id/iv_profile_service_appoint"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/email_service_appoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:drawableStart="@drawable/ic_email"
+                    android:gravity="fill"
+                    android:padding="8dp"
+                    android:text=" Email"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/contact_service_appoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/email_service_appoint"
+                    android:layout_marginLeft="20dp"
+                    android:drawableStart="@drawable/ic_contact"
+                    android:gravity="fill"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:text=" Contact"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/time_service_appoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/contact_service_appoint"
+                    android:layout_marginLeft="20dp"
+                    android:drawableStart="@drawable/ic_time"
+                    android:gravity="fill"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:text=" Time"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/date_service_appoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/time_service_appoint"
+                    android:layout_marginLeft="20dp"
+                    android:drawableStart="@drawable/ic_date"
+                    android:gravity="fill"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:text=" Date"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

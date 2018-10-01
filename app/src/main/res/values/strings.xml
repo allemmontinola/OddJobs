@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Odd Jobs</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="click"><u>Click Here</u></string>
+    <string name="rating"><u>Rating</u></string>
+    <string name="write"><u>Post Request</u></string>
+    <string name="cancel"><u>Cancel Request</u></string>
+    <string name="update"><u>Edit Request</u></string>
+    <string name="title_activity_maps__view__service">Map</string>
+    <string name="title_activity_maps__view__user">Map</string>
+</resources>
